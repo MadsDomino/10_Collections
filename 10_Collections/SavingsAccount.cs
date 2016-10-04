@@ -48,6 +48,19 @@ namespace _10_Collections
             return Value;
         }
 
+        private long id;
+        public long Id
+        {
+            set
+            {
+                id = value;
+            }
+            get
+            {
+                return id;
+            }
+        }
+
         public override string ToString()
         {
             return "SavingsAccount[value="+Value.ToString("#.0")+",interestRate="+InterestRate+"]";

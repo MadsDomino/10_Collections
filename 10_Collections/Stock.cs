@@ -2,7 +2,7 @@
 
 namespace _10_Collections
 {
-    internal class Stock : IAsset
+    public class Stock : IAsset
     {
         private string symbol;
         public string Symbol
@@ -43,7 +43,18 @@ namespace _10_Collections
             }
         }
 
-        public int Id;
+        private long id;
+        public long Id
+        {
+            set
+            {
+                id = value;
+            }
+            get
+            {
+                return id;
+            }
+        }
 
         public string GetSymbol()
         {
