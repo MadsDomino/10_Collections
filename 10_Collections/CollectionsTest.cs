@@ -52,7 +52,7 @@ namespace _10_Collections
             Assert.IsTrue(comparator.Compare(stockIBM, stockYHOO) < 0);
         }
 
-        /*[TestMethod]
+        [TestMethod]
         public void CanSortByName()
         {
             Portfolio portfolio = new Portfolio();
@@ -105,7 +105,7 @@ namespace _10_Collections
 
             IList<IAsset> assets = portfolio.GetAssets();
             assets.Add(stockYHOO);
-        }*/
+        }
 
     }
 }

@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using System;
+using System.Collections.ObjectModel;
+using System.Collections;
 
 namespace _10_Collections
 {
@@ -30,6 +33,20 @@ namespace _10_Collections
 
         public IList<IAsset> GetAssets()
         {
+            return stocks.AsReadOnly();
+        }
+
+        internal IList<IAsset> GetAssetsSortedByName()
+        {
+            IComparer<IAsset> compare = new StockNameComparator();
+            stocks.Sort(compare);
+            return stocks;
+        }
+
+        internal IList<IAsset> GetAssetsSortedByValue()
+        {
+            IComparer<IAsset> compare = new StockValueComparator();
+            stocks.Sort(compare);
             return stocks;
         }
 

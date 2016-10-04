@@ -4,6 +4,6 @@
     {
         double GetValue();
         string GetSymbol();
-        double GetSymbolLength();
+        int Id();
     }
 }

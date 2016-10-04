@@ -43,14 +43,11 @@ namespace _10_Collections
             }
         }
 
+        public int Id;
+
         public string GetSymbol()
         {
             return Symbol;
-        }
-
-        public double GetSymbolLength()
-        {
-            return Symbol.Length;
         }
 
         public double GetValue()

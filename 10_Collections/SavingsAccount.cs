@@ -48,11 +48,6 @@ namespace _10_Collections
             return Value;
         }
 
-        public double GetSymbolLength()
-        {
-            return Symbol.Length;
-        }
-
         public override string ToString()
         {
             return "SavingsAccount[value="+Value.ToString("#.0")+",interestRate="+InterestRate+"]";

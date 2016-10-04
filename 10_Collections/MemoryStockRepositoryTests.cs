@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections;
 using System.Collections.Generic;
 
-/*namespace _10_Collections
+namespace _10_Collections
 {
     //THESE ARE THE SECOND TESTS YOU SHOULD DO
 
@@ -48,7 +48,7 @@ using System.Collections.Generic;
             Assert.AreEqual(yhoo, loaded);
         }
 
-        [TestMethod]
+        /*[TestMethod]
         public void CanSaveAfterChangeWithoutError()
         {
             IStockRepository repository = new MemoryStockRepository();
@@ -86,9 +86,8 @@ using System.Collections.Generic;
             ICollection stocks;
             stocks = repository.FindAllStocks();
             Assert.AreEqual(0, stocks.Count);
-        }
+        }*/
 
         
     }
 }
-*/
